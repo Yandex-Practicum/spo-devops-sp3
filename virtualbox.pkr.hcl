@@ -1,7 +1,15 @@
+packer {
+  required_plugins {
+    ansible = {
+      source  = "github.com/hashicorp/ansible"
+      version = "~> 1"
+    }
+  }
+}
+
 source "virtualbox-iso" "ubuntu-troubleshooting" {
   iso_url          = "https://old-releases.ubuntu.com/releases/22.04.3/ubuntu-22.04.3-live-server-amd64.iso"
   iso_checksum     = "sha256:a4acfda10b18da50e2ec50ccaf860d7f20b389df8765611142305c0e911d16fd"
-  iso_checksum_type = "sha256"
   
   guest_os_type = "Ubuntu_64"
   vm_name       = "ubuntu-troubleshooting"
@@ -9,6 +17,7 @@ source "virtualbox-iso" "ubuntu-troubleshooting" {
   ssh_username = "ubuntu"
   ssh_password = "ubuntu"
   ssh_timeout  = "30m"
+  shutdown_command = "echo 'ubuntu' | sudo -S shutdown -P now"
   
   http_directory = "http"
   boot_command = [
@@ -36,13 +45,8 @@ source "virtualbox-iso" "ubuntu-troubleshooting" {
   format          = "ova"
   
   vboxmanage = [
-    ["modifyvm", "{{.Name}}", "--nat-localhostreachable1", "on"],
     ["modifyvm", "{{.Name}}", "--memory", "2048"],
     ["modifyvm", "{{.Name}}", "--cpus", "2"]
-  ]
-  
-  vboxmanage_post = [
-    ["modifyvm", "{{.Name}}", "--nat-localhostreachable1", "on"]
   ]
 }
 
@@ -58,7 +62,7 @@ build {
   }
 
   provisioner "ansible" {
-    playbook_file = "ansible/playbook.yml"
+    playbook_file = "playbook.yml"
     user          = "ubuntu"
     use_proxy     = "false"
     galaxy_file   = "requirements.yml"

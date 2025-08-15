@@ -1,0 +1,34 @@
+{
+ "collection_info": {
+  "namespace": "serverscom",
+  "name": "mitogen",
+  "version": "1.3.4",
+  "authors": [
+   "Sergey Putko <psvmcc+ansible-galaxy@gmail.com>",
+   "George Shuklin <george.shuklin@gmail.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "ansible",
+   "mitogen"
+  ],
+  "description": "Mitogen strategy as collection",
+  "license": [
+   "MIT"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/serverscom/ansible-collection-mitogen",
+  "documentation": "https://github.com/serverscom/ansible-collection-mitogen",
+  "homepage": "https://github.com/serverscom/ansible-collection-mitogen",
+  "issues": "https://github.com/serverscom/ansible-collection-mitogen"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "dfa93ae573484db0838b40ae452e4d5342b152be4176e02114d74c57d5b363bb",
+  "format": 1
+ },
+ "format": 1
+}

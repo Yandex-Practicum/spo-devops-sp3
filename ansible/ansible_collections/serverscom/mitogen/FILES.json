@@ -1,0 +1,82 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8971958c99c3ab2ece0da64575d7a3a36dd95460087230d664d036b4016732a2",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/strategy",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/strategy/mitogen_free.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "22f4c4e872f7308e4575492c4276c392e2adfaf41b471b8a666f170805ea98fa",
+   "format": 1
+  },
+  {
+   "name": "plugins/strategy/patching.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4e6b98bd967cbda1e0dc56b0b1d8fd43c7f37ae0a51e269a74cbb10c4786ae6",
+   "format": 1
+  },
+  {
+   "name": "plugins/strategy/mitogen_linear.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "85e6f30f7c6ef0d5d60fc324abdc4b9a98ad8ce76bf72ea9c0b3501478737ea5",
+   "format": 1
+  },
+  {
+   "name": "plugins/strategy/mitogen_host_pinned.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88480568bfec90beeb961e2becb1fe173eb505936f99f499348289ed7826ed79",
+   "format": 1
+  },
+  {
+   "name": "plugins/strategy/mitogen.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2f56479d70f6b3ecdc383ecf5f910df8eafabf61bde890b822c893e6108f9cd4",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "65fb8cad8de2c1766d7df009c0aa6df93cece68fea031d16cb16764038cee063",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

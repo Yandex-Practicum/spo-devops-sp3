@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/serverscom-mitogen-1.3.4.tar.gz
+format_version: 1.0.0
+name: mitogen
+namespace: serverscom
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 1.3.4
+version_url: /api/v3/plugin/ansible/content/published/collections/index/serverscom/mitogen/versions/1.3.4/
