@@ -1,0 +1,22 @@
+# ISO files
+*.iso
+
+# VirtualBox files
+*.vdi
+*.vmdk
+*.ova
+*.ovf
+
+# UTM files
+*.utm
+
+# Output directories
+output/
+packer_cache/
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
